@@ -22,7 +22,6 @@ jobs:
 
       - name: Deploy SAM Application
         run: |
-          sam deploy --stack-name my-sam-stack \
+          sam deploy --stack-name serverless-qu \
                      --template-file template.yaml \
-                     --capabilities CAPABILITY_IAM \
-                     --no-fail-on-empty-changeset
+                     --capabilities CAPABILITY_IAM 
